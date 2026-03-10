@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/talentra/static/css/main.3aee30b4.css",
+    "main.js": "/talentra/static/js/main.fb539505.js",
+    "static/media/logo.png": "/talentra/static/media/logo.3b243bd91c3538e8af3a.png",
+    "index.html": "/talentra/index.html",
+    "main.3aee30b4.css.map": "/talentra/static/css/main.3aee30b4.css.map",
+    "main.fb539505.js.map": "/talentra/static/js/main.fb539505.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aee30b4.css",
+    "static/js/main.fb539505.js"
+  ]
+}

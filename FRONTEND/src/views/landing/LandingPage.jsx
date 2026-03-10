@@ -9,7 +9,6 @@ import { COMPANY } from '../../models/contentModel';
 import styles from './LandingPage.module.css';
 import logo from '../../asset/logo.png';
 
-
 export default function LandingPage() {
   const navigate = useNavigate();
 
@@ -24,7 +23,8 @@ export default function LandingPage() {
       <div className={styles.grid}></div>
 
       <div className={styles.content}>
-        <div className={styles.logoContainer}>
+        <div className={styles.header}>
+           <div className={styles.logoContainer}>
           <img 
             src={logo} 
             alt="Company Logo" 
@@ -39,7 +39,11 @@ export default function LandingPage() {
           Consultancy
           <span className={styles.line}></span>
         </div>
+
         <p className={styles.tagline}>{COMPANY.tagline}</p>
+
+        </div>
+       
 
         <div className={styles.cards}>
           {/* Employer Card */}
@@ -60,5 +64,6 @@ export default function LandingPage() {
         </div>
       </div>
     </div>
+   
   );
 }

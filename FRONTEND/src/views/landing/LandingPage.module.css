@@ -15,12 +15,22 @@
 .eyebrow { display:flex; align-items:center; justify-content:center; gap:12px; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#93C5FD; margin-bottom:24px; }
 .line { width:40px; height:1px; background:rgba(147,197,253,0.4); }
 
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .logoContainer { 
   display: flex; 
-  justify-content: center; 
+  justify-content: flex-start; 
   align-items: center;
   gap: 16px;
   margin-bottom: 20px;
+  width: 100%;
+  padding-right: 30%;
 }
 
 .logoCircle {
@@ -39,10 +49,14 @@
   gap: 16px;
 }
 
-.logo { font-family:'Playfair Display',Georgia,serif; font-size:clamp(64px,12vw,108px); font-weight:900; color:#fff; line-height:1; margin-bottom:20px; letter-spacing:-2px; }
+.logo { font-family:'Playfair Display',Georgia,serif; font-size:clamp(64px,12vw,108px); font-weight:900; color:#fff; line-height:1; margin-bottom:20px; letter-spacing:-2px; text-align: center; width: 100%; display: block; }
 .logo span { color:#3B82F6; }
 
-.tagline { font-size:clamp(16px,2vw,19px); color:rgba(255,255,255,0.6); font-weight:300; max-width:500px; margin:0 auto 60px; line-height:1.65; }
+.eyebrow { display:flex; align-items:center; justify-content:center; gap:12px; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#93C5FD; margin-bottom:24px; width: 100%; }
+
+.tagline { font-size:clamp(16px,2vw,19px); color:rgba(255,255,255,0.6); font-weight:300; max-width:500px; margin:0 auto 60px; line-height:1.65; text-align: center; display: block; }
+
+.cards { display:flex; gap:28px; justify-content:center; flex-wrap:wrap; }
 
 .card { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:24px; padding:44px 52px; cursor:pointer; transition:all 0.28s cubic-bezier(0.4,0,0.2,1); width:300px; display:flex; flex-direction:column; align-items:center; gap:16px; backdrop-filter:blur(12px); }
 .card:hover { background:rgba(26,86,219,0.2); border-color:rgba(59,130,246,0.5); transform:translateY(-8px); box-shadow:0 24px 64px rgba(26,86,219,0.28); }
