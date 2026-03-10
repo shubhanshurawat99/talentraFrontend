@@ -9,7 +9,7 @@ const candidateValidationSchema = Joi.object({
   currentCTC: Joi.string().trim().min(1).max(50).required(),
   skills: Joi.array().items(Joi.string().trim()).min(1).required(),
   experience: Joi.string().valid('0-1', '1-3', '3-5', '5-8', '8-12', '12+').required(),
-  resumeLink: Joi.string().uri().optional()
+  resumeLink: Joi.string().optional().allow('')
 });
 
 const recruiterValidationSchema = Joi.object({

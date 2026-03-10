@@ -50,20 +50,10 @@ const candidateSchema = new mongoose.Schema({
     type: String,
     enum: ['pending', 'reviewed', 'shortlisted', 'rejected'],
     default: 'pending'
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  updatedAt: {
-    type: Date,
-    default: Date.now
   }
-});
+ 
+}, { timestamps: true });
 
-candidateSchema.pre('save', function(next) {
-  this.updatedAt = Date.now();
-  next();
-});
+
 
 module.exports = mongoose.model('Candidate', candidateSchema);

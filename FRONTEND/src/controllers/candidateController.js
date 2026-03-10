@@ -89,7 +89,9 @@ export function useCandidateController() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to submit application');
+        const errorData = await response.json();
+        console.error('Backend validation error:', errorData);
+        throw new Error(errorData.message || 'Failed to submit application');
       }
 
       setSubmitted(true);

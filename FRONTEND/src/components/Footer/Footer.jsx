@@ -7,8 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <Link to="/" className={styles.brand}>Guidemyway</Link>
-        <p className={styles.tagline}> Consulting</p>
+        
        
         <p className={styles.copy}>{COMPANY.copyright}</p>
       </div>

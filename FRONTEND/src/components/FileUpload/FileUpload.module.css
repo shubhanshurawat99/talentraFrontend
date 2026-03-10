@@ -1,8 +1,0 @@
-.zone { border:2px dashed #CBD5E1; border-radius:12px; padding:32px; text-align:center; cursor:pointer; transition:all 0.25s; background:#F8FAFC; font-size:14px; color:#64748B; }
-.zone:hover,.drag { border-color:#1A56DB; background:#EFF6FF; }
-.hasError { border-color:#EF4444; }
-.hidden { display:none; }
-.icon { font-size:32px; margin-bottom:10px; }
-.link { color:#1A56DB; font-weight:600; cursor:pointer; }
-.hint { font-size:12px; margin-top:6px; }
-.fileName { margin-top:10px; font-size:13px; color:#1A56DB; font-weight:500; }

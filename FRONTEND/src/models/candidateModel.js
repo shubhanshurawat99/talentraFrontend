@@ -69,7 +69,7 @@ export function validateCandidate(data) {
   else if (!['0-1', '1-3', '3-5', '5-8', '8-12', '12+'].includes(data.experience))
     errors.experience = 'Please select a valid experience level.';
 
-  if (data.resumeLink && !isValidUrl(data.resumeLink))
+  if (data.resumeLink && data.resumeLink.trim() && !isValidUrl(data.resumeLink))
     errors.resumeLink = 'Please enter a valid Google Drive link.';
 
   return errors;

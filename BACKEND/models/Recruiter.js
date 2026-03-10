@@ -31,20 +31,8 @@ const recruiterSchema = new mongoose.Schema({
     type: String,
     enum: ['pending', 'contacted', 'closed'],
     default: 'pending'
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  updatedAt: {
-    type: Date,
-    default: Date.now
   }
-});
+}, { timestamps: true });
 
-recruiterSchema.pre('save', function(next) {
-  this.updatedAt = Date.now();
-  next();
-});
 
 module.exports = mongoose.model('Recruiter', recruiterSchema);

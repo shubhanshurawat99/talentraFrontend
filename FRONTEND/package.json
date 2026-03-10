@@ -11,7 +11,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "vite",
     "build": "react-scripts build",
     "build:cra": "react-scripts build",
     "preview": "vite preview",
