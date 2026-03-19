@@ -1,4 +1,5 @@
 const Recruiter = require('../models/Recruiter');
+
 const { addRecruiterEmailJob } = require('../services/emailQueue');
 
 const recruiterController = {

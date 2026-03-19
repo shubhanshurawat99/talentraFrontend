@@ -3,7 +3,7 @@
 // Business logic for the Candidate submission form.
 // Connects CandidateModel validation to View state.
 // ─────────────────────────────────────────────────────────
-
+import { API_BASE_URL } from '../config/api';
 import { useState, useCallback } from 'react';
 import { createCandidate, validateCandidate } from '../models/candidateModel';
 
@@ -80,7 +80,7 @@ export function useCandidateController() {
     setLoading(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/candidates', {
+      const response = await fetch(`${API_BASE_URL}/candidates`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

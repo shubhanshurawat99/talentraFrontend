@@ -2,7 +2,7 @@
 // CONTROLLER: recruiterController.js
 // Business logic for the Employer Contact form.
 // ─────────────────────────────────────────────────────────
-
+import { API_BASE_URL } from '../config/api';
 import { useState, useCallback } from 'react';
 import { createRecruiter, validateRecruiter } from '../models/recruiterModel';
 
@@ -36,7 +36,7 @@ export function useRecruiterController() {
     setLoading(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/recruiters', {
+      const response = await fetch(`${API_BASE_URL}/recruiters`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
