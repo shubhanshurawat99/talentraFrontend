@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Talentra — Recruitment Platform built with React MVC Architecture",
   "private": true,
- "homepage": "https://shubhanshurawat99.github.io/talentra",
+ "homepage": "./",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
